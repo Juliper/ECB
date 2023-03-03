@@ -1,0 +1,49 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="12" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="12" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body/>
+    </Function>
+  </functions>
+  <records>
+    <RecordTypeDeclaration line="1" column="0" name="foo">
+      <elements>
+        <RecordElementDeclaration line="2" column="4" name="a" isVariable="true">
+          <typeSpecifier class="IntTypeSpecifier" line="2" column="8">
+            <type class="IntType"/>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+        <RecordElementDeclaration line="3" column="4" name="b" isVariable="false">
+          <typeSpecifier class="IntTypeSpecifier" line="3" column="8">
+            <type class="IntType"/>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+        <RecordElementDeclaration line="4" column="4" name="c" isVariable="true">
+          <typeSpecifier class="VectorTypeSpecifier" line="4" column="8">
+            <elementTypeSpecifier class="IntTypeSpecifier" line="4" column="15">
+              <type class="IntType"/>
+            </elementTypeSpecifier>
+            <dimensionExpression class="IntValue" line="4" column="20" value="2">
+              <type class="IntType"/>
+            </dimensionExpression>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+      </elements>
+    </RecordTypeDeclaration>
+    <RecordTypeDeclaration line="7" column="0" name="bar">
+      <elements>
+        <RecordElementDeclaration line="8" column="4" name="d" isVariable="false">
+          <typeSpecifier class="IntTypeSpecifier" line="8" column="8">
+            <type class="IntType"/>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+        <RecordElementDeclaration line="9" column="4" name="e" isVariable="true">
+          <typeSpecifier class="RecordTypeSpecifier" line="9" column="8" recordTypeName="foo"/>
+        </RecordElementDeclaration>
+      </elements>
+    </RecordTypeDeclaration>
+  </records>
+</Module>

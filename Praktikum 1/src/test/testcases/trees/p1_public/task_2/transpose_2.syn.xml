@@ -1,0 +1,24 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="1" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="1" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <VariableAssignment line="2" column="4">
+          <identifier line="2" column="4" name="mat"/>
+          <value class="Multiplication" line="2" column="10">
+            <leftOperand class="mavlc.syntax.expression.MatrixTranspose" line="2" column="10">
+              <operand class="IdentifierReference" line="2" column="11" name="mat1"/>
+            </leftOperand>
+            <rightOperand class="mavlc.syntax.expression.MatrixTranspose" line="2" column="18">
+              <operand class="IdentifierReference" line="2" column="19" name="mat2"/>
+            </rightOperand>
+          </value>
+        </VariableAssignment>
+      </body>
+    </Function>
+  </functions>
+  <records/>
+</Module>

@@ -1,0 +1,28 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="1" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="1" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <CompoundStatement line="2" column="4">
+          <statements>
+            <ValueDefinition line="3" column="8" name="pi">
+              <typeSpecifier class="FloatTypeSpecifier" line="3" column="12">
+                <type class="FloatType"/>
+              </typeSpecifier>
+              <value class="FloatValue" line="3" column="23" value="3.142"/>
+            </ValueDefinition>
+            <CallStatement line="4" column="8">
+              <callExpression line="4" column="8" functionName="printLine">
+                <actualParameters/>
+              </callExpression>
+            </CallStatement>
+          </statements>
+        </CompoundStatement>
+      </body>
+    </Function>
+  </functions>
+  <records/>
+</Module>

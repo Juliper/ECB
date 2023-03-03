@@ -1,0 +1,60 @@
+digraph {
+node [shape=Mrecord, style=filled, fillcolor=white, fontname="Calibri"];
+graph [ordering=out, nodesep=0.3, ranksep=1];
+
+# SimpleNode VoidType
+node0 [label="VoidType", tooltip="VoidType"]
+
+# DeclarationLiteral main
+node1 [shape=box, label="main", fillcolor="#cccccc", tooltip="main"]
+
+# ReferenceLiteral mat
+node2 [shape=box, label="mat", fillcolor="#cccccc", tooltip="mat"]
+
+# PortNode SimpleLhs
+node3:p0:s -> node2:n
+node3 [label="{SimpleLhs|{<p0>Name}}", tooltip="SimpleLhs"]
+
+# ReferenceLiteral mat1
+node4 [shape=box, label="mat1", fillcolor="#cccccc", tooltip="mat1"]
+
+# SimpleNode Identifier
+node5:s -> node4:n
+node5 [label="Identifier", tooltip="Identifier"]
+
+# PortNode Transpose
+node6:p0:s -> node5:n
+node6 [label="{Transpose|{<p0>Operand}}", tooltip="Transpose"]
+
+# ReferenceLiteral mat2
+node7 [shape=box, label="mat2", fillcolor="#cccccc", tooltip="mat2"]
+
+# SimpleNode Identifier
+node8:s -> node7:n
+node8 [label="Identifier", tooltip="Identifier"]
+
+# PortNode Transpose
+node9:p0:s -> node8:n
+node9 [label="{Transpose|{<p0>Operand}}", tooltip="Transpose"]
+
+# PortNode Multiplication
+node10:p0:s -> node6:n
+node10:p1:s -> node9:n
+node10 [label="{Multiplication|{<p0>Left|<p1>Right}}", tooltip="Multiplication"]
+
+# PortNode Assignment
+node11:p0:s -> node3:n
+node11:p1:s -> node10:n
+node11 [label="{Assignment|{<p0>Target|<p1>Value}}", tooltip="Assignment"]
+
+# PortNode Function
+node12:p0:s -> node0:n
+node12:p1:s -> node1:n
+node12:p3_0:s -> node11:n
+node12 [label="{Function|{<p0>ReturnType|<p1>Name|{Parameters|{}}|{Statements|{<p3_0>1}}}}", tooltip="Function"]
+
+# PortNode Module
+node13:p1_0:s -> node12:n
+node13 [label="{Module|{{Records|{}}|{Functions|{<p1_0>1}}}}", tooltip="Module"]
+
+}

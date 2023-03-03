@@ -1,0 +1,192 @@
+2=== Running test case p3_public/task_1/and_1 ===
+
+false
+false
+false
+true
+10
+
+(The program has finished successfully.
+Output:
+false
+false
+false
+true
+10
+
+'The program has finished successfully.
+
+
+@=== Test case p3_public/task_1/and_1 finished successfully ===
+
+;=== Running test case p3_public/task_1/division_out_1 ===
+
+3.0
+3
+
+(The program has finished successfully.
+Output:
+3.0
+3
+
+'The program has finished successfully.
+
+
+I=== Test case p3_public/task_1/division_out_1 finished successfully ===
+
+<=== Running test case p3_public/task_2/transpose_out_2 ===
+
+original:
+	1, 2, 3
+	4, 5, 6
+	7, 8, 9
+transposed:
+	1, 4, 7
+	2, 5, 8
+	3, 6, 9
+
+(The program has finished successfully.
+Output:
+
+original:
+1, 2, 3
+4, 5, 6
+7, 8, 9
+transposed:
+1, 4, 7
+2, 5, 8
+3, 6, 9
+
+'The program has finished successfully.
+
+
+J=== Test case p3_public/task_2/transpose_out_2 finished successfully ===
+
+;=== Running test case p3_public/task_3/compound_out_1 ===
+
+Start!
+1. compound statement
+2. compound statement
+(The program has finished successfully.
+Output:
+Start!
+1. compound statement
+2. compound statement
+'The program has finished successfully.
+
+
+I=== Test case p3_public/task_3/compound_out_1 finished successfully ===
+
+;=== Running test case p3_public/task_3/compound_out_3 ===
+
+Start!
+a: 42
+
+(The program has finished successfully.
+Output:
+Start!
+a: 42
+
+'The program has finished successfully.
+
+
+I=== Test case p3_public/task_3/compound_out_3 finished successfully ===
+
+6=== Running test case p3_public/task_4/lhs_out_1 ===
+
+5
+
+(The program has finished successfully.
+Output:
+5
+
+'The program has finished successfully.
+
+
+D=== Test case p3_public/task_4/lhs_out_1 finished successfully ===
+
+6=== Running test case p3_public/task_4/lhs_out_3 ===
+
+
+6The program has finished with an error: runtimeError
+$Error message: Index out of bounds
+Output:
+
+5The program has finished with an error: runtimeError
+#Error message: Index out of bounds
+
+
+D=== Test case p3_public/task_4/lhs_out_3 finished successfully ===
+
+	==== Running test case p3_public/task_4/matrix_lhs_out_2 ===
+	
+	15
+	
+	(The program has finished successfully.
+	Output:
+	15
+	
+	'The program has finished successfully.
+	
+	
+	K=== Test case p3_public/task_4/matrix_lhs_out_2 finished successfully ===
+	
+
+==== Running test case p3_public/task_4/record_lhs_out_2 ===
+
+
+
+4
+
+
+
+(The program has finished successfully.
+
+Output:
+
+4
+
+
+
+'The program has finished successfully.
+
+
+
+
+
+K=== Test case p3_public/task_4/record_lhs_out_2 finished successfully ===
+
+
+==== Running test case p3_public/task_4/vector_lhs_out_1 ===
+
+
+6The program has finished with an error: runtimeError
+$Error message: Index out of bounds
+Output:
+
+5The program has finished with an error: runtimeError
+#Error message: Index out of bounds
+
+
+K=== Test case p3_public/task_4/vector_lhs_out_1 finished successfully ===
+
+6=== Running test case p3_public/task_5/fibonacci ===
+
+0=== Running test case p3_public/task_5/gcd ===
+
+:=== Running test case p3_public/task_5/if_stmt_out_2 ===
+
+<=== Running test case p3_public/task_6/subvector_out_1 ===
+
+<=== Running test case p3_public/task_6/subvector_out_3 ===
+
+<=== Running test case p3_public/task_6/subvector_out_5 ===
+
+<=== Running test case p3_public/task_7/for_loop_out_10 ===
+
+;=== Running test case p3_public/task_7/for_loop_out_5 ===
+
+;=== Running test case p3_public/task_7/for_loop_out_6 ===
+
+;=== Running test case p3_public/task_7/for_loop_out_9 ===
+

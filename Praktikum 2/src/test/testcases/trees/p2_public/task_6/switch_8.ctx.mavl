@@ -1,0 +1,8 @@
+function void main(){
+  val int a = 10;
+  var int b;
+  switch(a){
+    default:
+      b = 10;
+  }
+}

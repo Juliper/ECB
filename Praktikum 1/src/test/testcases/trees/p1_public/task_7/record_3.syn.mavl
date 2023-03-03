@@ -1,0 +1,11 @@
+record foo {
+	var float x;
+}
+
+function void main() {
+	test(@foo[1.1]);
+}
+
+function float test(foo f) {
+	return f@x;
+}

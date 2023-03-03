@@ -1,0 +1,8 @@
+
+MatrixTranspose can not be applied to type vector.
+
+Faulty node in line 2, column 30:
+> ~[1, 2]
+
+Applicable types:
+> matrix

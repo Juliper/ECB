@@ -1,0 +1,53 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="5" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="5" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <CallStatement line="6" column="4">
+          <callExpression line="6" column="4" functionName="test">
+            <actualParameters>
+              <RecordInit line="6" column="9" typeName="foo">
+                <elements>
+                  <FloatValue line="6" column="14" value="1.1">
+                    <type class="FloatType"/>
+                  </FloatValue>
+                </elements>
+              </RecordInit>
+            </actualParameters>
+          </callExpression>
+        </CallStatement>
+      </body>
+    </Function>
+    <Function line="9" column="0" name="test">
+      <returnTypeSpecifier class="FloatTypeSpecifier" line="9" column="9">
+        <type class="FloatType"/>
+      </returnTypeSpecifier>
+      <parameters>
+        <FormalParameter line="9" column="20" name="f">
+          <typeSpecifier class="RecordTypeSpecifier" line="9" column="20" recordTypeName="foo"/>
+        </FormalParameter>
+      </parameters>
+      <body>
+        <ReturnStatement line="10" column="4">
+          <returnValue class="RecordElementSelect" line="10" column="11" elementName="x">
+            <recordExpression class="IdentifierReference" line="10" column="11" name="f"/>
+          </returnValue>
+        </ReturnStatement>
+      </body>
+    </Function>
+  </functions>
+  <records>
+    <RecordTypeDeclaration line="1" column="0" name="foo">
+      <elements>
+        <RecordElementDeclaration line="2" column="4" name="x" isVariable="true">
+          <typeSpecifier class="FloatTypeSpecifier" line="2" column="8">
+            <type class="FloatType"/>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+      </elements>
+    </RecordTypeDeclaration>
+  </records>
+</Module>

@@ -1,0 +1,3 @@
+function void main() {
+	mat = ~mat1 * ~mat2;
+}

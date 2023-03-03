@@ -1,0 +1,10 @@
+record myRecord {
+	var vector<float>[3] a;
+	var float x;
+}
+
+function void main() {
+	var myRecord a;
+	a = @myRecord[[1.1, 2.2, 3.3], 4.4];
+	a@a = (a@x) * a@a;
+}

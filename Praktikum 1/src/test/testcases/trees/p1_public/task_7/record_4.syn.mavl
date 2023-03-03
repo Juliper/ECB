@@ -1,0 +1,12 @@
+function void main() {
+	val bar b = test(3);
+}
+
+record bar {
+	var int a;
+	val int b;
+}
+
+function bar test(int x) {
+	return @bar[x, 3 * x];
+}

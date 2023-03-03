@@ -1,0 +1,210 @@
+digraph {
+node [shape=Mrecord, style=filled, fillcolor=white, fontname="Calibri"];
+graph [ordering=out, nodesep=0.3, ranksep=1];
+
+# SimpleNode VoidType
+node0 [label="VoidType", tooltip="VoidType"]
+
+# DeclarationLiteral main
+node1 [shape=box, label="main", fillcolor="#FFC6C6", tooltip="main"]
+
+# SimpleNode FloatType
+node2 [label="FloatType", tooltip="FloatType"]
+
+# Literal 1
+node3 [shape=box, label="1", fillcolor="#cccccc", tooltip="1"]
+
+# SimpleNode IntLiteral
+node4:s -> node3:n
+node4 [label="IntLiteral", tooltip="IntLiteral"]
+
+# Literal 3
+node5 [shape=box, label="3", fillcolor="#cccccc", tooltip="3"]
+
+# SimpleNode IntLiteral
+node6:s -> node5:n
+node6 [label="IntLiteral", tooltip="IntLiteral"]
+
+# PortNode MatrixType
+node7:p0:s -> node2:n
+node7:p1:s -> node4:n
+node7:p2:s -> node6:n
+node7 [label="{MatrixType|{<p0>ElementType|<p1>Rows|<p2>Cols}}", tooltip="MatrixType"]
+
+# DeclarationLiteral a
+node8 [shape=box, label="a", fillcolor="#EAFDC5", tooltip="a"]
+
+# Literal 4.0
+node9 [shape=box, label="4.0", fillcolor="#cccccc", tooltip="4.0"]
+
+# SimpleNode FloatLiteral
+node10:s -> node9:n
+node10 [label="FloatLiteral", tooltip="FloatLiteral"]
+
+# Literal 4.0
+node11 [shape=box, label="4.0", fillcolor="#cccccc", tooltip="4.0"]
+
+# SimpleNode FloatLiteral
+node12:s -> node11:n
+node12 [label="FloatLiteral", tooltip="FloatLiteral"]
+
+# Literal 4.0
+node13 [shape=box, label="4.0", fillcolor="#cccccc", tooltip="4.0"]
+
+# SimpleNode FloatLiteral
+node14:s -> node13:n
+node14 [label="FloatLiteral", tooltip="FloatLiteral"]
+
+# PortNode StructureInit
+node15:p0:s -> node10:n
+node15:p1:s -> node12:n
+node15:p2:s -> node14:n
+node15 [label="{StructureInit|{<p0>1|<p1>2|<p2>3}}", tooltip="StructureInit"]
+
+# PortNode StructureInit
+node16:p0:s -> node15:n
+node16 [label="{StructureInit|{<p0>1}}", tooltip="StructureInit"]
+
+# PortNode ValDef
+node17:p0:s -> node7:n
+node17:p1:s -> node8:n
+node17:p2:s -> node16:n
+node17 [label="{ValDef|{<p0>Type|<p1>Name|<p2>Value}}", tooltip="ValDef"]
+
+# SimpleNode FloatType
+node18 [label="FloatType", tooltip="FloatType"]
+
+# Literal 3
+node19 [shape=box, label="3", fillcolor="#cccccc", tooltip="3"]
+
+# SimpleNode IntLiteral
+node20:s -> node19:n
+node20 [label="IntLiteral", tooltip="IntLiteral"]
+
+# Literal 1
+node21 [shape=box, label="1", fillcolor="#cccccc", tooltip="1"]
+
+# SimpleNode IntLiteral
+node22:s -> node21:n
+node22 [label="IntLiteral", tooltip="IntLiteral"]
+
+# PortNode MatrixType
+node23:p0:s -> node18:n
+node23:p1:s -> node20:n
+node23:p2:s -> node22:n
+node23 [label="{MatrixType|{<p0>ElementType|<p1>Rows|<p2>Cols}}", tooltip="MatrixType"]
+
+# DeclarationLiteral b
+node24 [shape=box, label="b", fillcolor="#E4C3F7", tooltip="b"]
+
+# Literal 3.0
+node25 [shape=box, label="3.0", fillcolor="#cccccc", tooltip="3.0"]
+
+# SimpleNode FloatLiteral
+node26:s -> node25:n
+node26 [label="FloatLiteral", tooltip="FloatLiteral"]
+
+# PortNode StructureInit
+node27:p0:s -> node26:n
+node27 [label="{StructureInit|{<p0>1}}", tooltip="StructureInit"]
+
+# Literal 3.0
+node28 [shape=box, label="3.0", fillcolor="#cccccc", tooltip="3.0"]
+
+# SimpleNode FloatLiteral
+node29:s -> node28:n
+node29 [label="FloatLiteral", tooltip="FloatLiteral"]
+
+# PortNode StructureInit
+node30:p0:s -> node29:n
+node30 [label="{StructureInit|{<p0>1}}", tooltip="StructureInit"]
+
+# Literal 3.0
+node31 [shape=box, label="3.0", fillcolor="#cccccc", tooltip="3.0"]
+
+# SimpleNode FloatLiteral
+node32:s -> node31:n
+node32 [label="FloatLiteral", tooltip="FloatLiteral"]
+
+# PortNode StructureInit
+node33:p0:s -> node32:n
+node33 [label="{StructureInit|{<p0>1}}", tooltip="StructureInit"]
+
+# PortNode StructureInit
+node34:p0:s -> node27:n
+node34:p1:s -> node30:n
+node34:p2:s -> node33:n
+node34 [label="{StructureInit|{<p0>1|<p1>2|<p2>3}}", tooltip="StructureInit"]
+
+# PortNode ValDef
+node35:p0:s -> node23:n
+node35:p1:s -> node24:n
+node35:p2:s -> node34:n
+node35 [label="{ValDef|{<p0>Type|<p1>Name|<p2>Value}}", tooltip="ValDef"]
+
+# SimpleNode FloatType
+node36 [label="FloatType", tooltip="FloatType"]
+
+# Literal 1
+node37 [shape=box, label="1", fillcolor="#cccccc", tooltip="1"]
+
+# SimpleNode IntLiteral
+node38:s -> node37:n
+node38 [label="IntLiteral", tooltip="IntLiteral"]
+
+# Literal 1
+node39 [shape=box, label="1", fillcolor="#cccccc", tooltip="1"]
+
+# SimpleNode IntLiteral
+node40:s -> node39:n
+node40 [label="IntLiteral", tooltip="IntLiteral"]
+
+# PortNode MatrixType
+node41:p0:s -> node36:n
+node41:p1:s -> node38:n
+node41:p2:s -> node40:n
+node41 [label="{MatrixType|{<p0>ElementType|<p1>Rows|<p2>Cols}}", tooltip="MatrixType"]
+
+# DeclarationLiteral ab
+node42 [shape=box, label="ab", fillcolor="#FFF5C6", tooltip="ab"]
+
+# ReferenceLiteral a
+node43 -> node8 [style=dashed, constraint=false, color="#7BB800"]
+node43 [shape=box, label="a", fillcolor="#EAFDC5", tooltip="a"]
+
+# SimpleNode Identifier
+node44:s -> node43:n
+node44 [label="Identifier", tooltip="Identifier"]
+
+# ReferenceLiteral b
+node45 -> node24 [style=dashed, constraint=false, color="#7109AA"]
+node45 [shape=box, label="b", fillcolor="#E4C3F7", tooltip="b"]
+
+# SimpleNode Identifier
+node46:s -> node45:n
+node46 [label="Identifier", tooltip="Identifier"]
+
+# PortNode MatrixMult
+node47:p0:s -> node44:n
+node47:p1:s -> node46:n
+node47 [label="{MatrixMult|{<p0>Left|<p1>Right}}", tooltip="MatrixMult"]
+
+# PortNode ValDef
+node48:p0:s -> node41:n
+node48:p1:s -> node42:n
+node48:p2:s -> node47:n
+node48 [label="{ValDef|{<p0>Type|<p1>Name|<p2>Value}}", tooltip="ValDef"]
+
+# PortNode Function
+node49:p0:s -> node0:n
+node49:p1:s -> node1:n
+node49:p3_0:s -> node17:n
+node49:p3_1:s -> node35:n
+node49:p3_2:s -> node48:n
+node49 [label="{Function|{<p0>ReturnType|<p1>Name|{Parameters|{}}|{Statements|{<p3_0>1|<p3_1>2|<p3_2>3}}}}", tooltip="Function"]
+
+# PortNode Module
+node50:p1_0:s -> node49:n
+node50 [label="{Module|{{Records|{}}|{Functions|{<p1_0>1}}}}", tooltip="Module"]
+
+}

@@ -1,0 +1,37 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="1" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="1" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <ValueDefinition line="2" column="4" name="a">
+          <typeSpecifier class="VectorTypeSpecifier" line="2" column="8">
+            <elementTypeSpecifier class="IntTypeSpecifier" line="2" column="15">
+              <type class="IntType"/>
+            </elementTypeSpecifier>
+            <dimensionExpression class="IntValue" line="2" column="20" value="3">
+              <type class="IntType"/>
+            </dimensionExpression>
+          </typeSpecifier>
+          <value class="SubVector" line="2" column="27">
+            <structExpression class="IdentifierReference" line="2" column="27" name="b"/>
+            <baseIndexExpression class="IntValue" line="2" column="32" value="17">
+              <type class="IntType"/>
+            </baseIndexExpression>
+            <startOffsetExpression class="UnaryMinus" line="2" column="29">
+              <operand class="IntValue" line="2" column="30" value="1">
+                <type class="IntType"/>
+              </operand>
+            </startOffsetExpression>
+            <endOffsetExpression class="IntValue" line="2" column="35" value="1">
+              <type class="IntType"/>
+            </endOffsetExpression>
+          </value>
+        </ValueDefinition>
+      </body>
+    </Function>
+  </functions>
+  <records/>
+</Module>

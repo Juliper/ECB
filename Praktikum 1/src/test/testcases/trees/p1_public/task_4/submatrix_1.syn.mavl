@@ -1,0 +1,3 @@
+function void main(){
+	val matrix<int>[3][3] A = B{1:1:1}{2:2:1};
+}

@@ -1,0 +1,85 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="1" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="1" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <ValueDefinition line="2" column="2" name="a">
+          <typeSpecifier class="IntTypeSpecifier" line="2" column="6">
+            <type class="IntType"/>
+          </typeSpecifier>
+          <value class="IntValue" line="2" column="14" value="10">
+            <type class="IntType"/>
+          </value>
+        </ValueDefinition>
+        <VariableDeclaration line="3" column="2" name="b">
+          <typeSpecifier class="IntTypeSpecifier" line="3" column="6">
+            <type class="IntType"/>
+          </typeSpecifier>
+        </VariableDeclaration>
+        <SwitchStatement line="4" column="2">
+          <condition class="Subtraction" line="4" column="9">
+            <leftOperand class="Subtraction" line="4" column="10">
+              <leftOperand class="Addition" line="4" column="10">
+                <leftOperand class="IntValue" line="4" column="10" value="10">
+                  <type class="IntType"/>
+                </leftOperand>
+                <rightOperand class="IntValue" line="4" column="15" value="3">
+                  <type class="IntType"/>
+                </rightOperand>
+              </leftOperand>
+              <rightOperand class="IntValue" line="4" column="19" value="9">
+                <type class="IntType"/>
+              </rightOperand>
+            </leftOperand>
+            <rightOperand class="Addition" line="4" column="25">
+              <leftOperand class="IntValue" line="4" column="25" value="4">
+                <type class="IntType"/>
+              </leftOperand>
+              <rightOperand class="IntValue" line="4" column="29" value="10">
+                <type class="IntType"/>
+              </rightOperand>
+            </rightOperand>
+          </condition>
+          <cases>
+            <Case line="5" column="4">
+              <body class="VariableAssignment" line="6" column="8">
+                <identifier line="6" column="8" name="b"/>
+                <value class="IntValue" line="6" column="12" value="7">
+                  <type class="IntType"/>
+                </value>
+              </body>
+              <conditionExpression class="IntValue" line="5" column="9" value="1">
+                <type class="IntType"/>
+              </conditionExpression>
+            </Case>
+            <Case line="7" column="4">
+              <body class="VariableAssignment" line="8" column="6">
+                <identifier line="8" column="6" name="b"/>
+                <value class="IntValue" line="8" column="10" value="27">
+                  <type class="IntType"/>
+                </value>
+              </body>
+              <conditionExpression class="IntValue" line="7" column="9" value="10">
+                <type class="IntType"/>
+              </conditionExpression>
+            </Case>
+          </cases>
+          <defaults>
+            <Default line="9" column="4">
+              <body class="VariableAssignment" line="10" column="6">
+                <identifier line="10" column="6" name="b"/>
+                <value class="IntValue" line="10" column="10" value="10">
+                  <type class="IntType"/>
+                </value>
+              </body>
+            </Default>
+          </defaults>
+        </SwitchStatement>
+      </body>
+    </Function>
+  </functions>
+  <records/>
+</Module>

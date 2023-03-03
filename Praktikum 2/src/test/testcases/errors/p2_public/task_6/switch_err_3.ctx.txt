@@ -1,0 +1,17 @@
+
+Invalid switch statement in line 5, column 2:
+> Two cases with the same condition were found.
+
+Faulty node:
+> switch(a[1][1]) {
+> 	case 5: b = 7;
+> 	case 4: b = 27;
+> 	case 4: b = 27;
+> 	default: b = 10;
+> }
+
+First case:
+> case 4: b = 27;
+
+Second case:
+> case 4: b = 27;

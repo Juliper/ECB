@@ -1,0 +1,4 @@
+
+Syntax error in line 4, column 1:
+> Got token <eof '<eof>'>, but expected one of the following:
+> for, foreach, id, if, lbrace, return, switch, val, var

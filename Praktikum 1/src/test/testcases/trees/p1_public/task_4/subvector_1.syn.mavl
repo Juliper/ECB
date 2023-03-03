@@ -1,0 +1,3 @@
+function void main(){
+	val vector<int>[3] a = b{-1:17:1};
+}

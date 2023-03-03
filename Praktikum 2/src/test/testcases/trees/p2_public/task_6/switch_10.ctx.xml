@@ -1,0 +1,74 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="1" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="1" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <ValueDefinition line="2" column="2" name="a">
+          <typeSpecifier class="IntTypeSpecifier" line="2" column="6">
+            <type class="IntType"/>
+          </typeSpecifier>
+          <type class="IntType"/>
+          <value class="IntValue" line="2" column="14" value="10">
+            <type class="IntType"/>
+          </value>
+        </ValueDefinition>
+        <VariableDeclaration line="3" column="2" name="b">
+          <typeSpecifier class="IntTypeSpecifier" line="3" column="6">
+            <type class="IntType"/>
+          </typeSpecifier>
+          <type class="IntType"/>
+        </VariableDeclaration>
+        <SwitchStatement line="5" column="2">
+          <condition class="IntValue" line="5" column="9" value="0">
+            <type class="IntType"/>
+          </condition>
+          <cases>
+            <Case line="6" column="4" condition="1">
+              <body class="VariableAssignment" line="7" column="8">
+                <identifier line="7" column="8" name="b">
+                  <declaration class="VariableDeclaration" reference="../../../../../../VariableDeclaration"/>
+                </identifier>
+                <value class="IntValue" line="7" column="12" value="7">
+                  <type class="IntType"/>
+                </value>
+              </body>
+              <conditionExpression class="IntValue" line="6" column="9" value="1">
+                <type class="IntType"/>
+              </conditionExpression>
+            </Case>
+            <Case line="8" column="4" condition="10">
+              <body class="VariableAssignment" line="9" column="6">
+                <identifier line="9" column="6" name="b">
+                  <declaration class="VariableDeclaration" reference="../../../../../../VariableDeclaration"/>
+                </identifier>
+                <value class="IntValue" line="9" column="10" value="27">
+                  <type class="IntType"/>
+                </value>
+              </body>
+              <conditionExpression class="IntValue" line="8" column="9" value="10">
+                <type class="IntType"/>
+              </conditionExpression>
+            </Case>
+          </cases>
+          <defaults>
+            <Default line="10" column="4">
+              <body class="VariableAssignment" line="11" column="6">
+                <identifier line="11" column="6" name="b">
+                  <declaration class="VariableDeclaration" reference="../../../../../../VariableDeclaration"/>
+                </identifier>
+                <value class="IntValue" line="11" column="10" value="10">
+                  <type class="IntType"/>
+                </value>
+              </body>
+            </Default>
+          </defaults>
+        </SwitchStatement>
+      </body>
+      <returnType class="VoidType"/>
+    </Function>
+  </functions>
+  <records/>
+</Module>

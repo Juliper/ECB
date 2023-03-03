@@ -1,0 +1,70 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="6" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="6" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <VariableDeclaration line="7" column="4" name="a">
+          <typeSpecifier class="RecordTypeSpecifier" line="7" column="8" recordTypeName="myRecord"/>
+        </VariableDeclaration>
+        <VariableAssignment line="8" column="4">
+          <identifier line="8" column="4" name="a"/>
+          <value class="RecordInit" line="8" column="8" typeName="myRecord">
+            <elements>
+              <StructureInit line="8" column="18">
+                <elements>
+                  <FloatValue line="8" column="19" value="1.1">
+                    <type class="FloatType"/>
+                  </FloatValue>
+                  <FloatValue line="8" column="24" value="2.2">
+                    <type class="FloatType"/>
+                  </FloatValue>
+                  <FloatValue line="8" column="29" value="3.3">
+                    <type class="FloatType"/>
+                  </FloatValue>
+                </elements>
+              </StructureInit>
+              <FloatValue line="8" column="35" value="4.4">
+                <type class="FloatType"/>
+              </FloatValue>
+            </elements>
+          </value>
+        </VariableAssignment>
+        <VariableAssignment line="9" column="4">
+          <identifier class="RecordLhsIdentifier" line="9" column="4" name="a" elementName="a"/>
+          <value class="Multiplication" line="9" column="10">
+            <leftOperand class="RecordElementSelect" line="9" column="11" elementName="x">
+              <recordExpression class="IdentifierReference" line="9" column="11" name="a"/>
+            </leftOperand>
+            <rightOperand class="RecordElementSelect" line="9" column="18" elementName="a">
+              <recordExpression class="IdentifierReference" line="9" column="18" name="a"/>
+            </rightOperand>
+          </value>
+        </VariableAssignment>
+      </body>
+    </Function>
+  </functions>
+  <records>
+    <RecordTypeDeclaration line="1" column="0" name="myRecord">
+      <elements>
+        <RecordElementDeclaration line="2" column="4" name="a" isVariable="true">
+          <typeSpecifier class="VectorTypeSpecifier" line="2" column="8">
+            <elementTypeSpecifier class="FloatTypeSpecifier" line="2" column="15">
+              <type class="FloatType"/>
+            </elementTypeSpecifier>
+            <dimensionExpression class="IntValue" line="2" column="22" value="3">
+              <type class="IntType"/>
+            </dimensionExpression>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+        <RecordElementDeclaration line="3" column="4" name="x" isVariable="true">
+          <typeSpecifier class="FloatTypeSpecifier" line="3" column="8">
+            <type class="FloatType"/>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+      </elements>
+    </RecordTypeDeclaration>
+  </records>
+</Module>

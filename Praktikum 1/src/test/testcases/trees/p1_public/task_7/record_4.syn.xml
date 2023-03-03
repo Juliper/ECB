@@ -1,0 +1,63 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="1" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="1" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <ValueDefinition line="2" column="4" name="b">
+          <typeSpecifier class="RecordTypeSpecifier" line="2" column="8" recordTypeName="bar"/>
+          <value class="CallExpression" line="2" column="16" functionName="test">
+            <actualParameters>
+              <IntValue line="2" column="21" value="3">
+                <type class="IntType"/>
+              </IntValue>
+            </actualParameters>
+          </value>
+        </ValueDefinition>
+      </body>
+    </Function>
+    <Function line="10" column="0" name="test">
+      <returnTypeSpecifier class="RecordTypeSpecifier" line="10" column="9" recordTypeName="bar"/>
+      <parameters>
+        <FormalParameter line="10" column="18" name="x">
+          <typeSpecifier class="IntTypeSpecifier" line="10" column="18">
+            <type class="IntType"/>
+          </typeSpecifier>
+        </FormalParameter>
+      </parameters>
+      <body>
+        <ReturnStatement line="11" column="4">
+          <returnValue class="RecordInit" line="11" column="11" typeName="bar">
+            <elements>
+              <IdentifierReference line="11" column="16" name="x"/>
+              <Multiplication line="11" column="19">
+                <leftOperand class="IntValue" line="11" column="19" value="3">
+                  <type class="IntType"/>
+                </leftOperand>
+                <rightOperand class="IdentifierReference" line="11" column="23" name="x"/>
+              </Multiplication>
+            </elements>
+          </returnValue>
+        </ReturnStatement>
+      </body>
+    </Function>
+  </functions>
+  <records>
+    <RecordTypeDeclaration line="5" column="0" name="bar">
+      <elements>
+        <RecordElementDeclaration line="6" column="4" name="a" isVariable="true">
+          <typeSpecifier class="IntTypeSpecifier" line="6" column="8">
+            <type class="IntType"/>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+        <RecordElementDeclaration line="7" column="4" name="b" isVariable="false">
+          <typeSpecifier class="IntTypeSpecifier" line="7" column="8">
+            <type class="IntType"/>
+          </typeSpecifier>
+        </RecordElementDeclaration>
+      </elements>
+    </RecordTypeDeclaration>
+  </records>
+</Module>

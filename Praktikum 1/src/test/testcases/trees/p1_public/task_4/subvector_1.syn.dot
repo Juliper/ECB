@@ -1,0 +1,84 @@
+digraph {
+node [shape=Mrecord, style=filled, fillcolor=white, fontname="Calibri"];
+graph [ordering=out, nodesep=0.3, ranksep=1];
+
+# SimpleNode VoidType
+node0 [label="VoidType", tooltip="VoidType"]
+
+# DeclarationLiteral main
+node1 [shape=box, label="main", fillcolor="#cccccc", tooltip="main"]
+
+# SimpleNode IntType
+node2 [label="IntType", tooltip="IntType"]
+
+# Literal 3
+node3 [shape=box, label="3", fillcolor="#cccccc", tooltip="3"]
+
+# SimpleNode IntLiteral
+node4:s -> node3:n
+node4 [label="IntLiteral", tooltip="IntLiteral"]
+
+# PortNode VectorType
+node5:p0:s -> node2:n
+node5:p1:s -> node4:n
+node5 [label="{VectorType|{<p0>ElementType|<p1>Dimension}}", tooltip="VectorType"]
+
+# DeclarationLiteral a
+node6 [shape=box, label="a", fillcolor="#cccccc", tooltip="a"]
+
+# ReferenceLiteral b
+node7 [shape=box, label="b", fillcolor="#cccccc", tooltip="b"]
+
+# SimpleNode Identifier
+node8:s -> node7:n
+node8 [label="Identifier", tooltip="Identifier"]
+
+# Literal 1
+node9 [shape=box, label="1", fillcolor="#cccccc", tooltip="1"]
+
+# SimpleNode IntLiteral
+node10:s -> node9:n
+node10 [label="IntLiteral", tooltip="IntLiteral"]
+
+# PortNode UnaryMinus
+node11:p0:s -> node10:n
+node11 [label="{UnaryMinus|{<p0>Operand}}", tooltip="UnaryMinus"]
+
+# Literal 17
+node12 [shape=box, label="17", fillcolor="#cccccc", tooltip="17"]
+
+# SimpleNode IntLiteral
+node13:s -> node12:n
+node13 [label="IntLiteral", tooltip="IntLiteral"]
+
+# Literal 1
+node14 [shape=box, label="1", fillcolor="#cccccc", tooltip="1"]
+
+# SimpleNode IntLiteral
+node15:s -> node14:n
+node15 [label="IntLiteral", tooltip="IntLiteral"]
+
+# PortNode SubVector
+node16:p0:s -> node8:n
+node16:p1_0:s -> node11:n
+node16:p1_1:s -> node13:n
+node16:p1_2:s -> node15:n
+node16 [label="{SubVector|{<p0>Vector|{Range|{<p1_0>Start|<p1_1>Base|<p1_2>End}}}}", tooltip="SubVector"]
+
+# PortNode ValDef
+node17:p0:s -> node5:n
+node17:p1:s -> node6:n
+node17:p2:s -> node16:n
+node17 [label="{ValDef|{<p0>Type|<p1>Name|<p2>Value}}", tooltip="ValDef"]
+
+# PortNode Function
+node18:p0:s -> node0:n
+node18:p1:s -> node1:n
+node18:p3_0:s -> node17:n
+node18 [label="{Function|{<p0>ReturnType|<p1>Name|{Parameters|{}}|{Statements|{<p3_0>1}}}}", tooltip="Function"]
+
+# PortNode Module
+node19:p1_0:s -> node18:n
+node19 [label="{Module|{{Records|{}}|{Functions|{<p1_0>1}}}}", tooltip="Module"]
+
+}

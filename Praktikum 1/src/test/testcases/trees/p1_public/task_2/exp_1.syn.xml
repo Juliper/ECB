@@ -1,0 +1,26 @@
+<Module line="1" column="0">
+  <functions>
+    <Function line="1" column="0" name="main">
+      <returnTypeSpecifier class="VoidTypeSpecifier" line="1" column="9">
+        <type class="VoidType"/>
+      </returnTypeSpecifier>
+      <parameters/>
+      <body>
+        <ValueDefinition line="2" column="4" name="exp">
+          <typeSpecifier class="FloatTypeSpecifier" line="2" column="8">
+            <type class="FloatType"/>
+          </typeSpecifier>
+          <value class="Exponentiation" line="2" column="20">
+            <leftOperand class="FloatValue" line="2" column="20" value="3.141">
+              <type class="FloatType"/>
+            </leftOperand>
+            <rightOperand class="FloatValue" line="2" column="28" value="42.0">
+              <type class="FloatType"/>
+            </rightOperand>
+          </value>
+        </ValueDefinition>
+      </body>
+    </Function>
+  </functions>
+  <records/>
+</Module>

@@ -1,0 +1,13 @@
+function void main(){
+  val int a = 10;
+  var int b;
+
+  switch(0){
+    case 1:
+      b = 7;
+    default:
+      b = 10;
+    case 10:
+      b = 27;
+  }
+}

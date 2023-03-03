@@ -1,0 +1,13 @@
+record foo {
+	var int a;
+	val int b;
+	var vector<int>[2] c;
+}
+
+record bar {
+	val int d;
+	var foo e;
+}
+
+function void main() {
+}

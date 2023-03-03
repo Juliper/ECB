@@ -1,0 +1,56 @@
+digraph {
+node [shape=Mrecord, style=filled, fillcolor=white, fontname="Calibri"];
+graph [ordering=out, nodesep=0.3, ranksep=1];
+
+# SimpleNode VoidType
+node0 [label="VoidType", tooltip="VoidType"]
+
+# DeclarationLiteral main
+node1 [shape=box, label="main", fillcolor="#cccccc", tooltip="main"]
+
+# SimpleNode FloatType
+node2 [label="FloatType", tooltip="FloatType"]
+
+# DeclarationLiteral pi
+node3 [shape=box, label="pi", fillcolor="#cccccc", tooltip="pi"]
+
+# Literal 3.142
+node4 [shape=box, label="3.142", fillcolor="#cccccc", tooltip="3.142"]
+
+# SimpleNode FloatLiteral
+node5:s -> node4:n
+node5 [label="FloatLiteral", tooltip="FloatLiteral"]
+
+# PortNode ValDef
+node6:p0:s -> node2:n
+node6:p1:s -> node3:n
+node6:p2:s -> node5:n
+node6 [label="{ValDef|{<p0>Type|<p1>Name|<p2>Value}}", tooltip="ValDef"]
+
+# ReferenceLiteral printLine
+node7 [shape=box, label="printLine", fillcolor="#cccccc", tooltip="printLine"]
+
+# PortNode Call
+node8:p0:s -> node7:n
+node8 [label="{Call|{<p0>Function|{Arguments|{}}}}", tooltip="Call"]
+
+# PortNode CallStatement
+node9:p0:s -> node8:n
+node9 [label="{CallStatement|{<p0>CallExpr}}", tooltip="CallStatement"]
+
+# PortNode Compound
+node10:p0:s -> node6:n
+node10:p1:s -> node9:n
+node10 [label="{Compound|{<p0>1|<p1>2}}", tooltip="Compound"]
+
+# PortNode Function
+node11:p0:s -> node0:n
+node11:p1:s -> node1:n
+node11:p3_0:s -> node10:n
+node11 [label="{Function|{<p0>ReturnType|<p1>Name|{Parameters|{}}|{Statements|{<p3_0>1}}}}", tooltip="Function"]
+
+# PortNode Module
+node12:p1_0:s -> node11:n
+node12 [label="{Module|{{Records|{}}|{Functions|{<p1_0>1}}}}", tooltip="Module"]
+
+}

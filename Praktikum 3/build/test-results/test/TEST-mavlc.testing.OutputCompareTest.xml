@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mavlc.testing.OutputCompareTest" tests="20" skipped="0" failures="10" errors="0" timestamp="2023-01-27T12:23:35" hostname="JULIAN-PC" time="0.362">
+  <properties/>
+  <testcase name="test[p3_public/task_1/and_1]" classname="mavlc.testing.OutputCompareTest" time="0.125"/>
+  <testcase name="test[p3_public/task_1/division_out_1]" classname="mavlc.testing.OutputCompareTest" time="0.023"/>
+  <testcase name="test[p3_public/task_2/transpose_out_2]" classname="mavlc.testing.OutputCompareTest" time="0.029"/>
+  <testcase name="test[p3_public/task_3/compound_out_1]" classname="mavlc.testing.OutputCompareTest" time="0.015"/>
+  <testcase name="test[p3_public/task_3/compound_out_3]" classname="mavlc.testing.OutputCompareTest" time="0.016"/>
+  <testcase name="test[p3_public/task_4/lhs_out_1]" classname="mavlc.testing.OutputCompareTest" time="0.014"/>
+  <testcase name="test[p3_public/task_4/lhs_out_3]" classname="mavlc.testing.OutputCompareTest" time="0.014"/>
+  <testcase name="test[p3_public/task_4/matrix_lhs_out_2]" classname="mavlc.testing.OutputCompareTest" time="0.017"/>
+  <testcase name="test[p3_public/task_4/record_lhs_out_2]" classname="mavlc.testing.OutputCompareTest" time="0.014"/>
+  <testcase name="test[p3_public/task_4/vector_lhs_out_1]" classname="mavlc.testing.OutputCompareTest" time="0.013"/>
+  <testcase name="test[p3_public/task_5/fibonacci]" classname="mavlc.testing.OutputCompareTest" time="0.006">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitIfStatement(CodeGenerator.java:311)
+	at mavlc.codegen.tam.CodeGenerator.visitIfStatement(CodeGenerator.java:48)
+	at mavlc.syntax.statement.IfStatement.accept(IfStatement.java:61)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_5/gcd]" classname="mavlc.testing.OutputCompareTest" time="0.006">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitIfStatement(CodeGenerator.java:311)
+	at mavlc.codegen.tam.CodeGenerator.visitIfStatement(CodeGenerator.java:48)
+	at mavlc.syntax.statement.IfStatement.accept(IfStatement.java:61)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_5/if_stmt_out_2]" classname="mavlc.testing.OutputCompareTest" time="0.005">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitIfStatement(CodeGenerator.java:311)
+	at mavlc.codegen.tam.CodeGenerator.visitIfStatement(CodeGenerator.java:48)
+	at mavlc.syntax.statement.IfStatement.accept(IfStatement.java:61)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_6/subvector_out_1]" classname="mavlc.testing.OutputCompareTest" time="0.018">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitSubVector(CodeGenerator.java:903)
+	at mavlc.codegen.tam.CodeGenerator.visitSubVector(CodeGenerator.java:48)
+	at mavlc.syntax.expression.SubVector.accept(SubVector.java:86)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at mavlc.codegen.tam.CodeGenerator.visitValueDefinition(CodeGenerator.java:104)
+	at mavlc.codegen.tam.CodeGenerator.visitValueDefinition(CodeGenerator.java:48)
+	at mavlc.syntax.statement.ValueDefinition.accept(ValueDefinition.java:46)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_6/subvector_out_3]" classname="mavlc.testing.OutputCompareTest" time="0.005">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitSubVector(CodeGenerator.java:903)
+	at mavlc.codegen.tam.CodeGenerator.visitSubVector(CodeGenerator.java:48)
+	at mavlc.syntax.expression.SubVector.accept(SubVector.java:86)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at mavlc.codegen.tam.CodeGenerator.visitValueDefinition(CodeGenerator.java:104)
+	at mavlc.codegen.tam.CodeGenerator.visitValueDefinition(CodeGenerator.java:48)
+	at mavlc.syntax.statement.ValueDefinition.accept(ValueDefinition.java:46)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_6/subvector_out_5]" classname="mavlc.testing.OutputCompareTest" time="0.005">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitSubVector(CodeGenerator.java:903)
+	at mavlc.codegen.tam.CodeGenerator.visitSubVector(CodeGenerator.java:48)
+	at mavlc.syntax.expression.SubVector.accept(SubVector.java:86)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at mavlc.codegen.tam.CodeGenerator.visitValueDefinition(CodeGenerator.java:104)
+	at mavlc.codegen.tam.CodeGenerator.visitValueDefinition(CodeGenerator.java:48)
+	at mavlc.syntax.statement.ValueDefinition.accept(ValueDefinition.java:46)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_7/for_loop_out_10]" classname="mavlc.testing.OutputCompareTest" time="0.011">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitForLoop(CodeGenerator.java:207)
+	at mavlc.codegen.tam.CodeGenerator.visitForLoop(CodeGenerator.java:48)
+	at mavlc.syntax.statement.ForLoop.accept(ForLoop.java:87)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_7/for_loop_out_5]" classname="mavlc.testing.OutputCompareTest" time="0.007">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitForLoop(CodeGenerator.java:207)
+	at mavlc.codegen.tam.CodeGenerator.visitForLoop(CodeGenerator.java:48)
+	at mavlc.syntax.statement.ForLoop.accept(ForLoop.java:87)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_7/for_loop_out_6]" classname="mavlc.testing.OutputCompareTest" time="0.007">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitForLoop(CodeGenerator.java:207)
+	at mavlc.codegen.tam.CodeGenerator.visitForLoop(CodeGenerator.java:48)
+	at mavlc.syntax.statement.ForLoop.accept(ForLoop.java:87)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <testcase name="test[p3_public/task_7/for_loop_out_9]" classname="mavlc.testing.OutputCompareTest" time="0.007">
+    <failure message="java.lang.UnsupportedOperationException" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
+	at mavlc.codegen.tam.CodeGenerator.visitForLoop(CodeGenerator.java:207)
+	at mavlc.codegen.tam.CodeGenerator.visitForLoop(CodeGenerator.java:48)
+	at mavlc.syntax.statement.ForLoop.accept(ForLoop.java:87)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:94)
+	at mavlc.codegen.tam.CodeGenerator.visitFunction(CodeGenerator.java:48)
+	at mavlc.syntax.function.Function.accept(Function.java:134)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.codegen.tam.CodeGenerator.visit(CodeGenerator.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:77)
+	at mavlc.codegen.tam.CodeGenerator.visitModule(CodeGenerator.java:48)
+	at mavlc.syntax.module.Module.accept(Module.java:45)
+	at mavlc.syntax.AstNode.accept(AstNode.java:46)
+	at mavlc.Pipeline.lambda$compileProgramImpl$2(Pipeline.java:255)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at mavlc.Pipeline.compileProgramImpl(Pipeline.java:253)
+	at mavlc.Pipeline.compileProgram(Pipeline.java:158)
+	at mavlc.testing.OutputCompareTest.run(OutputCompareTest.java:42)
+	at mavlc.testing.BaseCompareTest.test(BaseCompareTest.java:56)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</failure>
+  </testcase>
+  <system-out><![CDATA[=== Running test case p3_public/task_1/and_1 ===
+
+false
+false
+false
+true
+10
+
+The program has finished successfully.
+Output:
+false
+false
+false
+true
+10
+
+The program has finished successfully.
+
+
+=== Test case p3_public/task_1/and_1 finished successfully ===
+
+=== Running test case p3_public/task_1/division_out_1 ===
+
+3.0
+3
+
+The program has finished successfully.
+Output:
+3.0
+3
+
+The program has finished successfully.
+
+
+=== Test case p3_public/task_1/division_out_1 finished successfully ===
+
+=== Running test case p3_public/task_2/transpose_out_2 ===
+
+original:
+1, 2, 3
+4, 5, 6
+7, 8, 9
+transposed:
+1, 4, 7
+2, 5, 8
+3, 6, 9
+
+The program has finished successfully.
+Output:
+original:
+1, 2, 3
+4, 5, 6
+7, 8, 9
+transposed:
+1, 4, 7
+2, 5, 8
+3, 6, 9
+
+The program has finished successfully.
+
+
+=== Test case p3_public/task_2/transpose_out_2 finished successfully ===
+
+=== Running test case p3_public/task_3/compound_out_1 ===
+
+Start!
+1. compound statement
+2. compound statement
+The program has finished successfully.
+Output:
+Start!
+1. compound statement
+2. compound statement
+The program has finished successfully.
+
+
+=== Test case p3_public/task_3/compound_out_1 finished successfully ===
+
+=== Running test case p3_public/task_3/compound_out_3 ===
+
+Start!
+a: 42
+
+The program has finished successfully.
+Output:
+Start!
+a: 42
+
+The program has finished successfully.
+
+
+=== Test case p3_public/task_3/compound_out_3 finished successfully ===
+
+=== Running test case p3_public/task_4/lhs_out_1 ===
+
+5
+
+The program has finished successfully.
+Output:
+5
+
+The program has finished successfully.
+
+
+=== Test case p3_public/task_4/lhs_out_1 finished successfully ===
+
+=== Running test case p3_public/task_4/lhs_out_3 ===
+
+
+The program has finished with an error: runtimeError
+Error message: Index out of bounds
+Output:
+
+The program has finished with an error: runtimeError
+Error message: Index out of bounds
+
+
+=== Test case p3_public/task_4/lhs_out_3 finished successfully ===
+
+=== Running test case p3_public/task_4/matrix_lhs_out_2 ===
+
+15
+
+The program has finished successfully.
+Output:
+15
+
+The program has finished successfully.
+
+
+=== Test case p3_public/task_4/matrix_lhs_out_2 finished successfully ===
+
+=== Running test case p3_public/task_4/record_lhs_out_2 ===
+
+4
+
+The program has finished successfully.
+Output:
+4
+
+The program has finished successfully.
+
+
+=== Test case p3_public/task_4/record_lhs_out_2 finished successfully ===
+
+=== Running test case p3_public/task_4/vector_lhs_out_1 ===
+
+
+The program has finished with an error: runtimeError
+Error message: Index out of bounds
+Output:
+
+The program has finished with an error: runtimeError
+Error message: Index out of bounds
+
+
+=== Test case p3_public/task_4/vector_lhs_out_1 finished successfully ===
+
+=== Running test case p3_public/task_5/fibonacci ===
+
+=== Running test case p3_public/task_5/gcd ===
+
+=== Running test case p3_public/task_5/if_stmt_out_2 ===
+
+=== Running test case p3_public/task_6/subvector_out_1 ===
+
+=== Running test case p3_public/task_6/subvector_out_3 ===
+
+=== Running test case p3_public/task_6/subvector_out_5 ===
+
+=== Running test case p3_public/task_7/for_loop_out_10 ===
+
+=== Running test case p3_public/task_7/for_loop_out_5 ===
+
+=== Running test case p3_public/task_7/for_loop_out_6 ===
+
+=== Running test case p3_public/task_7/for_loop_out_9 ===
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
